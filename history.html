@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase History - Supermarket Simulator</title>
+    <link rel="stylesheet" href="history.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-box">
+        <h1>Purchase History</h1>
+      </div>
+      <div class="header-nav">
+        <a href="index.html" class="nav-link">⬅ Back to Checkout</a>
+      </div>
+    </header>
+
+    <main class="main-container single-col">
+      <section class="card">
+        <div class="history-header">
+          <h2>All Permanent Saved Receipts</h2>
+          <button
+            type="button"
+            id="clear-history-btn"
+            class="btn-small clear-btn"
+          >
+            Delete All History
+          </button>
+        </div>
+
+        <div id="history-container">
+          <!-- Dynamically populated from localStorage -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>CSE 326 Internet Programming Project</p>
+    </footer>
+
+    <script src="history.js"></script>
+  </body>
+</html>
